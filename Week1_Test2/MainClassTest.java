@@ -9,6 +9,7 @@ public class MainClassTest extends MainClass {
         } else {
             System.out.println("False");
         }
+        Assert.fail("Should be more than 45");
 
     }
 }
