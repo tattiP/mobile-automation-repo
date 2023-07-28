@@ -4,12 +4,9 @@ import org.junit.Test;
 public class MainClassTest extends MainClass {
     @Test
     public void testGetClassNumber(){
-        if (getClassNumber() > 45) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
-        }
-        Assert.fail("Should be more than 45");
+        int number = getClassNumber();
+
+        Assert.assertTrue("Number should be greater than 45",45 < number);
 
     }
 }
